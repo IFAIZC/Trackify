@@ -1,0 +1,37 @@
+/*removing underline from links*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 25px;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 70px;
+}
+
