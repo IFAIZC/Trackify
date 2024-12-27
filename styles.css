@@ -35,3 +35,13 @@ a {
     font-size: 70px;
 }
 
+.content-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
