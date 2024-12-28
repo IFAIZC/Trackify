@@ -4,6 +4,12 @@ a {
     color: #000;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 #home {
     display: flex;
     justify-content: center;
@@ -35,6 +41,10 @@ a {
     font-size: 70px;
 }
 
+.highlight {
+    color: #d769f8;
+}
+
 .content-2 {
     display: flex;
     justify-content: center;
@@ -43,5 +53,14 @@ a {
     gap: 20px;
     text-align: center;
     font-size: 20px;
+}
+
+.bold-trackify {
+    font-weight: bold;
+}
+
+.color-focus {
+    color: #d769f8;
+    font-weight: bold;
 }
 
