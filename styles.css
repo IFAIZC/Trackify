@@ -77,3 +77,31 @@ body {
 
 /* section 2 */
 
+#features {
+    display : flex;
+    justify-content: center;
+}
+
+.clock-img {
+    width: 400px; /* Set width */
+    height: 400px; /* Set height */
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.headline-s2 h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+}
