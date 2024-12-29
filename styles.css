@@ -107,6 +107,10 @@ body {
     margin: 0;
 }
 
+.headline-s2 span {
+    color: #d769f8;
+}
+
 
 
 /* section 3 */
@@ -131,6 +135,10 @@ body {
 
 .head-content h1 {
     margin-top: 0;
+}
+
+.head-content span {
+    color: #d769f8;
 }
 
 .container-4 {
@@ -230,3 +238,32 @@ body {
 
 /* section 4 */
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-5 h1 {
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.head-content-contact span {
+    color: #d769f8;
+}
+
+.linkedin-img {
+    width: 80px; /* Set width */
+    height: 80px; /* Set height */
+}
