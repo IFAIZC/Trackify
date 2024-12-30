@@ -1,4 +1,4 @@
-/*removing underline from links*/
+/* Removing underline from links */
 a {
     text-decoration: none;
     color: #000;
@@ -7,11 +7,11 @@ a {
 * {
     box-sizing: border-box;
 }
+
 section {
     height: 100vh;
     padding: 100px;
 }
-
 
 body {
     margin: 0;
@@ -74,18 +74,17 @@ body {
     font-weight: bold;
 }
 
-
-
-/* section 2 */
+/* Section 2 */
 
 #features {
-    display : flex;
+    display: flex;
     justify-content: center;
 }
 
 .clock-img {
-    width: 400px; /* Set width */
-    height: 350px; /* Set height */
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     padding-right: 50px;
 }
 
@@ -111,12 +110,10 @@ body {
     color: #d769f8;
 }
 
-
-
-/* section 3 */
+/* Section 3 */
 
 #pricing {
-    display : flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0;
@@ -145,31 +142,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 130px;
-}
-
-.pricing-content-1 {
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 50px;
-    text-align: center;
-    font-size: 20px;
-    background: #000000;
-    border-radius: 35px; 
-    border: 3px solid #cd2bee;
-    width: 300px;
 }
 
-.pricing-content-1 h1,
-.pricing-content-1 h3,
-.pricing-content-1 p {
-    color: white;
-    margin: 0;
-    padding: 10px;
-}
-
-
+.pricing-content-1,
 .pricing-content-2 {
     display: flex;
     flex-direction: column;
@@ -178,11 +155,15 @@ body {
     text-align: center;
     font-size: 20px;
     background: #000000;
-    border-radius: 35px; 
+    border-radius: 35px;
     border: 3px solid #cd2bee;
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
 }
 
+.pricing-content-1 h1,
+.pricing-content-1 h3,
+.pricing-content-1 p,
 .pricing-content-2 h3,
 .pricing-content-2 h1,
 .pricing-content-2 p {
@@ -191,7 +172,7 @@ body {
     padding: 10px;
 }
 
-/* button styling */
+/* Button Styling */
 .pricing-content-1 button,
 .pricing-content-2 button {
     background: #ffffff;
@@ -205,38 +186,22 @@ body {
 
 .pricing-content-1 button:hover,
 .pricing-content-2 button:hover {
-    background-color: #db34f1; /* Change background color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    background-color: #db34f1;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pricing-content-1 h3,
 .pricing-content-2 h3 {
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-.pricing-content-1 h3 {
     font-size: 50px;
 }
 
-.pricing-content-2 h3 {
-    font-size: 50px;
-}
-
-.pricing-content-1 p {
-    font-size: 15px;
-}
-
+.pricing-content-1 p,
 .pricing-content-2 p {
     font-size: 15px;
 }
 
-
-
-/* section 4 */
+/* Section 4 */
 
 #contact {
     display: flex;
@@ -264,6 +229,53 @@ body {
 }
 
 .linkedin-img {
-    width: 80px; /* Set width */
-    height: 80px; /* Set height */
+    width: 80px;
+    height: 80px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .content-1 {
+        font-size: 60px;
+    }
+    .headline-s2 h1 {
+        font-size: 50px;
+    }
+    .container-4 {
+        flex-direction: row;
+    }
+    .clock-img {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-1 {
+        font-size: 50px;
+    }
+    .headline-s2 h1 {
+        font-size: 40px;
+    }
+    .container-4 {
+        flex-direction: column;
+    }
+    .clock-img {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-1 {
+        font-size: 30px;
+    }
+    .headline-s2 h1 {
+        font-size: 25px;
+    }
+    .container-4 {
+        flex-direction: column;
+    }
+    .clock-img {
+        padding-right: 0;
+    }
 }
