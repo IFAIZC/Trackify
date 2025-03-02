@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Removing underline from links */
 a {
     text-decoration: none;
